@@ -1,0 +1,48 @@
+@import "./variables.scss";
+@import "./components/header.scss";
+@import "./components/banner.scss";
+/* CSS Reset */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* body 基础样式 */
+html, body, #app {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-y: auto; /* 竖向允许滚动 */
+  font-family: $font-family-base;
+  font-size: $font-size-base;
+  color:$color-font-base;
+  line-height: 1.5;
+}
+
+.btn_primary{
+  background-color: $color-primary;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  &:hover{
+    background-color: darken($color-primary,10%);
+  }
+}
+.btn_success{
+  background-color: $color-success;
+  color: $color-btn-text;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  &:hover{
+    background-color: darken($color-success,10%);
+  }
+}

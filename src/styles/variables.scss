@@ -1,0 +1,41 @@
+// 颜色
+$color-primary: #C54F1F;
+$color-success: #A1A884;
+$color-danger: #dec195;
+$color-base:#F9E9CE;
+$color-font-base: #2a2722;
+$color-font-1:#666;
+$color-font-2:#888;
+$color-font-3:#999;
+$color-btn-text: #fffbef;
+$color-border: #000;
+
+
+// 字体 待待确认
+$font-family-header: Georgia, serif;//英文标题
+$font-family-base: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$font-size-base: 16px;
+@font-face {
+    font-family: font-secondary;
+    src: url('../../public/Bona_Nova_SC/BonaNovaSC-Regular.ttf');
+}//英文副标题
+@font-face{
+    font-family:font-Cheading;
+    src:url('../../public/Bona_Nova_SC,Liu_Jian_Mao_Cao/Liu_Jian_Mao_Cao/LiuJianMaoCao-Regular.ttf')
+}//中文标题
+// 圆角
+$border-radius-base: 4px;
+
+// 页面间距
+$spacing-base: 16px;
+
+h1{
+    font-size: 128px;
+    color: $color-font-base;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+h2{
+    font-size: 64px;
+    color: $color-font-base;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}

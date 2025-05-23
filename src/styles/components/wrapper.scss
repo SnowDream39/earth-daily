@@ -1,0 +1,16 @@
+@import "../variables.scss";
+.wrapper{
+    //background-color: #ffffff9b;
+    background-color: $color-base;
+    //background-color: #f3e7cc;
+    background-image: url("https://www.transparenttextures.com/patterns/paper-2.png");
+    //background-image: url("https://www.transparenttextures.com/patterns/paper-2.png");
+    min-height: 150vh;
+    min-width: max-content;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    margin:0;
+    padding:0;
+    background-position: center;
+}

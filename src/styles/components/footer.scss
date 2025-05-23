@@ -1,0 +1,62 @@
+@import "../variables.scss";
+.footer {
+  width: 100%;
+  background-color: #222;          // 深色背景
+  color: #eee;                     // 浅色文字
+  padding: 30px 20px;              // 上下内边距
+  text-align: center;
+  font-family: $subtitle-font;     // 可用你的次标题字体变量
+  font-size: 1rem;
+  border-top: 2px solid #444;      // 顶部分割线
+
+  a {
+    color: #80b3ff;                // 链接颜色，蓝色系
+    text-decoration: none;
+    margin: 0 8px;
+
+    &:hover {
+      text-decoration: underline;
+      color: #aaddff;
+    }
+  }
+
+  .footer-content {
+    max-width: 1200px;              // 最大宽度，居中显示
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .footer-item {
+    flex: 1 1 200px;               // 灵活伸缩，最小宽200px
+    min-width: 180px;
+
+    &.social-links {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+
+      a {
+        font-size: 1.5rem;
+      }
+    }
+  }
+
+  @media (max-width: 600px) {
+    padding: 20px 10px;
+
+    .footer-content {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .footer-item {
+      flex: none;
+      width: 100%;
+      margin-bottom: 15px;
+      text-align: center;
+    }
+  }
+}

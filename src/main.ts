@@ -1,4 +1,8 @@
 import './assets/main.css'
+import '@/styles/variables.scss'
+import '@/styles/global.scss'
+import './styles/components/wrapper.scss'
+import './styles/components/banner.scss'
 
 import { createApp } from 'vue'
 import { createPinia } from 'pinia'
