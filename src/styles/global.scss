@@ -1,6 +1,4 @@
 @import "./variables.scss";
-@import "./components/header.scss";
-@import "./components/banner.scss";
 /* CSS Reset */
 *,
 *::before,
@@ -21,6 +19,18 @@ html, body, #app {
   color:$color-font-base;
   line-height: 1.5;
 }
+
+h1{
+    font-size: 128px;
+    color: $color-font-base;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+h2{
+    font-size: 64px;
+    color: $color-font-base;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
 
 .btn_primary{
   background-color: $color-primary;
