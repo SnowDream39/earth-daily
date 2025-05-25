@@ -2,47 +2,52 @@
 </script>
 
 <template>
-  <div class="wrapper h-full w-full m-0 p-0 overflow-y-auto flex flex-col items-center">
-    <header class="h-[65px] w-[90%] flex justify-between items-center">
+  <div class="wrapper h-full w-full m-0 p-0 overflow-y-auto flex flex-col items-center *:text-book">
+    <header class="h-[65px] w-[90%] flex justify-between items-center border-b-3 border-book border-solid">
       <div class="title text-4 font-bold uppercase">Earth Daily</div>
-      <div class="right">
-        <div class="menu text-4 uppercase flex">Why Earth Daily?</div>
-        <div class="menu text-4 uppercase flex">Learn More</div>
+      <div class="right flex gap-2 *:max-w-25 *:text-center">
+        <div class="menu text-4 uppercase flex hover:text-amber-600">Why Earth Daily?</div>
+        <div class="menu text-4 uppercase flex hover:text-amber-600">Learn More</div>
         <div class="btn_primary">Login</div>
       </div>
     </header>
-    <main class="w-[90%] flex flex-col">
+    <main class="w-[90%] flex flex-col bg-brand">
       <div class="banner">
         <div class="title-wrapper border-w-4">
           <div class="title text-7xl lg:text-9xl">EARTH DAILY</div>
-          <div class="subtitle text-5xl lg:text-7xl">UNFOLDED NEWs</div>
+          <div class="subtitle text-5xl lg:text-7xl">UNFOLDED NEWS</div>
         </div>
       </div>
       <div class="flex justify-between py-4 border-t-2 gap-x-4">
 
         <div class="left-box flex-1 h-80 border-t-2">
-          <div class="h-60">说明文字……………………………………………………</div>
+          <div class="h-60">
+            <p>Earth Daily 是一个展示全世界事实发生的新闻的网站。</p>
+            <p>Earth Daily 允许用户查看全球新闻，并分享自己的想法。</p>
+          </div>
           <div class="btn_success w-30" id="btn-get-started">Get Started</div>
         </div>
         <div class="right-box border-2 rounded-xl ">
-          <div class="globe"></div>
+          <div class="globe-container">
+
+            <div class="globe bg-blue-400"></div>
+          </div>
         </div>
       </div>
     </main>
-    <footer>
-      <div class="footer-content">
-        <div class="footer-item">
-          <© 2025 Your Company </div>
-            <div class="footer-item social-links">
-              <a href="#" aria-label="Facebook">Fb</a>
-              <a href="#" aria-label="Twitter">Tw</a>
-              <a href="#" aria-label="Instagram">Ig</a>
-            </div>
-            <div class="footer-item">
-              <<a href="/privacy">Privacy Policy</a>
-                <a href="/terms">Terms of Service</a>
-            </div>
+    <footer class="w-full bg-gray-800 text-gray-200 text-base px-5 py-7 text-center border-t-2 border-gray-600">
+      <div class="footer-content max-w-6xl my-auto flex flex-wrap justify-center gap-5">
+        <div class="footer-item text-gray-200">© SnowDream39 2025</div>
+        <div class="footer-item social-links *:text-2xl">
+          <a href="#" aria-label="Facebook">Fb</a>
+          <a href="#" aria-label="Twitter">Tw</a>
+          <a href="#" aria-label="Instagram">Ig</a>
         </div>
+        <div class="footer-item">
+          <a href="/privacy">Privacy Policy</a>
+          <a href="/terms">Terms of Service</a>
+        </div>
+      </div>
     </footer>
   </div>
 </template>
@@ -65,21 +70,6 @@ a {
   }
 }
 
-header {
-  border-bottom: 3px solid $color-font-base;
-
-  .title {
-    color: $color-font-base;
-  }
-
-  .menu {
-    color: $color-font-base;
-
-    &:hover {
-      color: $color-primary;
-    }
-  }
-}
 
 .banner {
   width: 90%;
@@ -138,24 +128,6 @@ header {
 
 
 footer {
-  width: 100%;
-  background-color: #222; // 深色背景
-  color: #eee; // 浅色文字
-  padding: 30px 20px; // 上下内边距
-  text-align: center;
-  font-size: 1rem;
-  border-top: 2px solid #444; // 顶部分割线
-
-
-
-  .footer-content {
-    max-width: 1200px; // 最大宽度，居中显示
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-  }
 
   .footer-item {
     flex: 1 1 200px; // 灵活伸缩，最小宽200px
@@ -165,10 +137,6 @@ footer {
       display: flex;
       justify-content: center;
       gap: 15px;
-
-      a {
-        font-size: 1.5rem;
-      }
     }
   }
 
@@ -189,18 +157,10 @@ footer {
   }
 }
 
-.right {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 100%;
-  width: 40%;
-}
-
 .globe-container {
   perspective: 800px; // 观察距离增加3D感觉
-  width: 200px;
-  height: 200px;
+  width: 300px;
+  height: 300px;
 }
 
 .globe {
