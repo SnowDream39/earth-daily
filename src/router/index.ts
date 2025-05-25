@@ -8,6 +8,11 @@ const router = createRouter({
       name: 'home',
       component: () => import('../views/HomeView.vue'),
     },
+    {
+      path: '/map',
+      name: 'map',
+      component: () => import('../views/CesiumView.vue'),
+    }
   ],
 })
 
