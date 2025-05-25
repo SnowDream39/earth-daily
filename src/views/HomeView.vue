@@ -240,7 +240,7 @@
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  background-image: url('../../../public/NASA2.jpg');
+  background-image: url('/NASA2.jpg');
   background-size: cover;
   animation: spin 10s linear infinite;
   transform-style: preserve-3d; // 保留3D层

@@ -17,11 +17,11 @@ $font-family-base: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 $font-size-base: 16px;
 @font-face {
     font-family: font-secondary;
-    src: url('../../public/Bona_Nova_SC/BonaNovaSC-Regular.ttf');
+    src: url('/Bona_Nova_SC/BonaNovaSC-Regular.ttf');
 }//英文副标题
 @font-face{
     font-family:font-Cheading;
-    src:url('../../public/Bona_Nova_SC,Liu_Jian_Mao_Cao/Liu_Jian_Mao_Cao/LiuJianMaoCao-Regular.ttf')
+    src:url('/Bona_Nova_SC,Liu_Jian_Mao_Cao/Liu_Jian_Mao_Cao/LiuJianMaoCao-Regular.ttf')
 }//中文标题
 // 圆角
 $border-radius-base: 4px;
