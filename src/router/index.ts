@@ -12,6 +12,16 @@ const router = createRouter({
       path: '/map',
       name: 'map',
       component: () => import('../views/CesiumView.vue'),
+    },
+    {
+      path: '/login',
+      name: 'login',
+      component: () => import('../views/LoginView.vue'),
+    },
+    {
+      path: '/callback',
+      name: 'login-callback',
+      component: () => import('../views/LoginCallback.vue'),
     }
   ],
 })

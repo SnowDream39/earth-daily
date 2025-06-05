@@ -2,7 +2,6 @@ import { fileURLToPath, URL } from 'node:url'
 
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
-import vueDevTools from 'vite-plugin-vue-devtools'
 import tailwindcss from '@tailwindcss/vite'
 import cesium from 'vite-plugin-cesium'
 
@@ -10,7 +9,6 @@ import cesium from 'vite-plugin-cesium'
 export default defineConfig({
   plugins: [
     vue(),
-    vueDevTools(),
     tailwindcss(),
     cesium(),
   ],
