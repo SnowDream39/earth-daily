@@ -1,4 +1,12 @@
 <script setup lang="ts">
+import { ref } from 'vue';
+import LoginPanel from './LoginPanel.vue';
+// 定义一个响应式变量来控制登录面板的显示与隐藏
+const showLoginPanel = ref(false);
+// 点击 Login 按钮时显示登录面板
+const handleLoginClick = () => {
+  showLoginPanel.value = true;
+};
 </script>
 
 <template>
@@ -8,7 +16,8 @@
       <div class="right flex gap-2 *:max-w-25 *:text-center">
         <div class="menu text-4 uppercase flex hover:text-amber-600">Why Earth Daily?</div>
         <div class="menu text-4 uppercase flex hover:text-amber-600">Learn More</div>
-        <div class="btn_primary">Login</div>
+        <!--  Login 添加点击事件 -->
+        <div class="btn_primary" @click="handleLoginClick">Login</div>
       </div>
     </header>
     <main class="w-[90%] flex flex-col bg-brand">
@@ -49,6 +58,8 @@
         </div>
       </div>
     </footer>
+    <!-- 使用 LoginPanel 组件，并传入显示状态 -->
+    <LoginPanel :isShow="showLoginPanel" @close="showLoginPanel = false" />
   </div>
 </template>
 
