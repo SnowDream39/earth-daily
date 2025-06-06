@@ -27,7 +27,9 @@ import { RouterLink } from 'vue-router';
             <p to="/why">Earth Daily 是一个展示全世界事实发生的新闻的网站。</p>
             <p>Earth Daily 允许用户查看全球新闻，并分享自己的想法。</p>
           </div>
-          <div class="btn_success w-30" id="btn-get-started">Get Started</div>
+          <div class="btn_success w-30" id="btn-get-started">
+            <a href="/map">Get Started</a>
+          </div>
         </div>
         <div class="right-box border-2 rounded-xl ">
           <div class="globe-container">
