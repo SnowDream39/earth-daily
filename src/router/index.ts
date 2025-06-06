@@ -11,7 +11,7 @@ const router = createRouter({
     {
       path: '/map',
       name: 'map',
-      component: () => import('../views/CesiumView.vue'),
+      component: () => import('../views/MapView.vue'),
     },
     {
       path: '/login',
@@ -22,6 +22,16 @@ const router = createRouter({
       path: '/callback',
       name: 'login-callback',
       component: () => import('../views/LoginCallback.vue'),
+    },
+    {
+      path: '/why',
+      name: 'why',
+      component: () => import('../views/whyearth.vue'),
+    },
+    {
+      path: '/more',
+      name: 'more',
+      component: () => import('../views/learnmore.vue'),
     }
   ],
 })

@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { RouterLink } from 'vue-router';
+
 </script>
 
 <template>
@@ -6,8 +8,8 @@
     <header class="h-[65px] w-[90%] flex justify-between items-center border-b-3 border-book border-solid">
       <div class="title text-4 font-bold uppercase">Earth Daily</div>
       <div class="right flex gap-2 *:max-w-25 *:text-center">
-        <div class="menu text-4 uppercase flex hover:text-amber-600">Why Earth Daily?</div>
-        <div class="menu text-4 uppercase flex hover:text-amber-600">Learn More</div>
+        <RouterLink to="/why" class="menu text-4 uppercase flex hover:text-amber-600">Why Earth Daily?</RouterLink>
+        <RouterLink to="/more" class="menu text-4 uppercase flex hover:text-amber-600">Learn More</RouterLink>
         <div class="btn_primary">Login</div>
       </div>
     </header>
@@ -22,7 +24,7 @@
 
         <div class="left-box flex-1 h-80 border-t-2">
           <div class="h-60">
-            <p>Earth Daily 是一个展示全世界事实发生的新闻的网站。</p>
+            <p to="/why">Earth Daily 是一个展示全世界事实发生的新闻的网站。</p>
             <p>Earth Daily 允许用户查看全球新闻，并分享自己的想法。</p>
           </div>
           <div class="btn_success w-30" id="btn-get-started">Get Started</div>

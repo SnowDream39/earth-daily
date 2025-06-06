@@ -3,9 +3,6 @@
     <CesiumFrame class="w-full h-full"/>
   </div>
   <Sidebar/>
-  <aside class="absolute left-0 top-0 h-full w-10 bg-yellow-200">
-
-  </aside>
   <Live2dWidget :model-url="modelUrl" class="absolute right-0 bottom-0"/>
 </template>
 

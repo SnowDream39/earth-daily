@@ -15,8 +15,8 @@
 import { onMounted, ref } from 'vue';
 import * as fief from '@fief/fief';
 
-let login: Function = () => {}
-let logout: Function = () => {}
+let login = () => {}
+let logout = () => {}
 
 function initialize() {
   const fiefClient = new fief.Fief({
