@@ -49,4 +49,17 @@ footer {
     }
   }
 }
+
+a {
+  color: #80b3ff; // 链接颜色，蓝色系
+  margin: 0 8px;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+    color: #aaddff;
+  }
+}
+
+
 </style>
