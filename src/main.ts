@@ -11,10 +11,4 @@ app.use(createPinia())
 import router from './router'
 app.use(router)
 
-import live2d from 'live2d-widget'
-import 'live2d-widget/index.css'
-import 'live2d-widget/style.css'
-app.use(live2d)
-
-
 app.mount('#app')

@@ -10,6 +10,7 @@
       <div class="footer-item">
         <a href="/privacy">Privacy Policy</a>
         <a href="/terms">Terms of Service</a>
+        <a href="/about">About Us</a>
       </div>
     </div>
   </footer>

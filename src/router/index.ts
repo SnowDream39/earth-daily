@@ -21,12 +21,17 @@ const router = createRouter({
     {
       path: '/why',
       name: 'why',
-      component: () => import('../views/whyearth.vue'),
+      component: () => import('../views/WhyView.vue'),
     },
     {
       path: '/more',
       name: 'more',
-      component: () => import('../views/learnmore.vue'),
+      component: () => import('../views/MoreView.vue'),
+    },
+    {
+      path: '/about',
+      name: 'about',
+      component: () => import('../views/AboutView.vue'),
     }
   ],
 })
