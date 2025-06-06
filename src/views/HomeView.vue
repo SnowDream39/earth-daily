@@ -16,8 +16,7 @@ const handleLoginClick = () => {
       <div class="right flex gap-2 *:max-w-25 *:text-center">
         <div class="menu text-4 uppercase flex hover:text-amber-600">Why Earth Daily?</div>
         <div class="menu text-4 uppercase flex hover:text-amber-600">Learn More</div>
-        <!--  Login 添加点击事件 -->
-        <div class="btn_primary" @click="handleLoginClick">Login</div>
+        <div class="btn_primary">Login</div>
       </div>
     </header>
     <main class="w-[90%] flex flex-col bg-brand">
@@ -31,10 +30,12 @@ const handleLoginClick = () => {
 
         <div class="left-box flex-1 h-80 border-t-2">
           <div class="h-60">
-            <p>Earth Daily 是一个展示全世界事实发生的新闻的网站。</p>
+            <p to="/why">Earth Daily 是一个展示全世界事实发生的新闻的网站。</p>
             <p>Earth Daily 允许用户查看全球新闻，并分享自己的想法。</p>
           </div>
-          <div class="btn_success w-30" id="btn-get-started">Get Started</div>
+          <div class="btn_success w-30" id="btn-get-started">
+            <a href="/map">Get Started</a>
+          </div>
         </div>
         <div class="right-box border-2 rounded-xl ">
           <div class="globe-container">

@@ -11,6 +11,11 @@
     "type-check": "vue-tsc --build"
   },
   "dependencies": {
+    "@element-plus/icons-vue": "^2.3.1",
+    "@fief/fief": "^0.15.0",
+    "axios": "^1.9.0",
+    "live2d-widget": "link:d:/Project/Vue/Live2dWidget",
+    "mitt": "^3.0.1",
     "pinia": "^3.0.1",
     "vue": "^3.5.13",
     "vue-router": "^4.5.0"
@@ -21,6 +26,7 @@
     "@types/node": "^22.14.0",
     "@vitejs/plugin-vue": "^5.2.3",
     "@vue/tsconfig": "^0.7.0",
+    "cesium": "^1.129.0",
     "npm-run-all2": "^7.0.2",
     "sass-embedded": "^1.89.0",
     "tailwindcss": "^4.1.7",
