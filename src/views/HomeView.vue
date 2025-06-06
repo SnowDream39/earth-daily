@@ -17,14 +17,15 @@
     </div>
     <div class="right-box border-2 rounded-xl ">
       <div class="globe-container">
-
-        <div class="globe bg-blue-400"></div>
+        <div class="globe"></div>
       </div>
+      <ThreeEarth containerSelector=".globe" />
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
+import ThreeEarth from './ThreeEarth.vue'
 </script>
 
 <style scoped lang="scss">
@@ -43,7 +44,7 @@
   .title-wrapper {
     width: fit-content; // 宽度包裹内容
     margin: 0 auto; // 让容器居中
-    vertical-align: bottom; // 有时候帮字体往下靠
+    vertical-align: bottom;
     display: inline-block;
   }
 
@@ -86,28 +87,12 @@
 }
 
 .globe-container {
-  perspective: 800px; // 观察距离增加3D感觉
   width: 300px;
   height: 300px;
 }
-
 .globe {
-  width: 300px;
-  height: 300px;
-  border-radius: 50%;
-  background-image: url('/NASA2.jpg');
-  background-size: cover;
-  animation: spin 10s linear infinite;
-  transform-style: preserve-3d; // 保留3D层
+  width: 100%;
+  height: 100%;
 }
 
-@keyframes spin {
-  0% {
-    transform: rotateY(0deg);
-  }
-
-  100% {
-    transform: rotateY(360deg);
-  }
-}
 </style>
