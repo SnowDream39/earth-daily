@@ -12,11 +12,11 @@
         <div class="block-title">团队成员</div>
         <div class="horizontal-line"></div>
         <div class="about-list">
-            <div class="about-card"><strong>庞金靖：</strong>xxxx</div>
-            <div class="about-card"><strong>李书亦：</strong>xxxx</div>
-            <div class="about-card"><strong>陈依涵：</strong>xxxx</div>
-            <div class="about-card"><strong>张思齐：</strong>xxxx</div>
-            <div class="about-card"><strong>王玙歆：</strong>xxxx</div>
+            <div class="about-card"><strong>庞金靖：用户系统、评论系统，部分前端样式，服务器部署，AI助手</strong></div>
+            <div class="about-card"><strong>李书亦：页面原型设计，部分前端样式，新闻空间联动，部分后端，部分前端接口调用</strong></div>
+            <div class="about-card"><strong>陈依涵：部分前端页面，部分前端样式，部分后端接口</strong></div>
+            <div class="about-card"><strong>张思齐：用户登录面板，统计图表接口</strong></div>
+            <div class="about-card"><strong>王玙歆：cesium控制，部分后端接口，部分前后端调用</strong></div>
         </div>
     </section>
 
