@@ -51,6 +51,27 @@
         </div>
       </section>
 
+      <section class="block">
+        <div class="block-title">数据来源与管理</div>
+        <div class="horizontal-line"></div>
+        <div class="block-grid">
+          <div class="block-item">
+            <div class="item-title">新闻数据来源</div>
+            <p>Earth Daily 的新闻数据主要来源于 News API，这是一个专业的新闻数据提供商，能够为我们提供全球范围内的新闻资讯。通过 News API，我们可以获取到各种类型的新闻文章，包括但不限于国际新闻、国内新闻、财经新闻、科技新闻等。这些新闻数据涵盖了多个领域和主题，确保了我们平台新闻内容的多样性和丰富性。同时，News API 提供的新闻数据具有较高的时效性和准确性，能够满足用户对最新新闻资讯的需求。</p>
+          </div>
+          <div class="divider"></div>
+          <div class="block-item">
+            <div class="item-title">地图数据来源</div>
+            <p>为了实现新闻与地理空间的联动展示，我们采用了多种地图数据源。具体包括百度地图、高德地图、OpenStreetMap，它们提供了详细地图数据，包括道路、建筑、兴趣点等，能够为用户提供准确的地理定位。此外，我们利用 GeoServer 来管理和发布自定义的地理空间数据图层，以及使用 Cesium 实现三维地图的展示和交互功能，为用户提供更加直观和生动的三维地图体验。</p>
+          </div>
+          <div class="divider"></div>
+          <div class="block-item">
+            <div class="item-title">数据储存与管理</div>
+            <p>在数据管理方面，我们采用了 SQLite 数据库来存储从 News API 获取的新闻文章信息。SQLite 是一个轻量级的数据库系统，具有简单、高效、易于部署的特点，能够满足我们对新闻数据的快速存储和查询需求。同时，我们利用 GeoServer 来管理和发布地图数据，将不同来源的地图数据整合在一起，形成统一的地图服务。GeoServer 提供了丰富的地图渲染和查询功能，能够满足我们对地图数据的多样化需求，为用户提供更加丰富和准确的地图展示效果。通过这些技术方案，我们能够确保新闻数据和地图数据的准确性和及时性，为用户提供高质量的服务。</p>
+          </div>
+        </div>
+      </section>
+
 </template>
 
 <style lang="scss" scoped>
@@ -122,22 +143,25 @@
 }
 
 .banner {
-  width: 90%;
-  margin: 0 auto;
+   width: 90%;
+  margin: 0 auto; // 整体居中容器
   position: relative;
   min-height: 150px;
+  //font-family: $subtitle-font;
   display: flex;
   flex-direction: column;
   flex: 1;
 
   .title-wrapper {
-    width: fit-content;
-    margin: 0 auto;
-    vertical-align: bottom;
+    width: fit-content; // 宽度包裹内容
+    margin: 0 auto; // 让容器居中
+    vertical-align: bottom; // 有时候帮字体往下靠
     display: inline-block;
   }
 
   .title {
+    font-family: $font-family-header; //font-Cheading;
+    //font-weight: bold;
     letter-spacing: 3px;
     margin: 0;
     text-align: left;

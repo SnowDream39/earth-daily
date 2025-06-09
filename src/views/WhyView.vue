@@ -74,6 +74,30 @@ h2 {
   margin: auto;
 }
 
+.banner {
+  width: 90%;
+  margin: 0 auto; // 整体居中容器
+  position: relative;
+  min-height: 150px;
+  //font-family: $subtitle-font;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
 
+  .title-wrapper {
+    width: fit-content; // 宽度包裹内容
+    margin: 0 auto; // 让容器居中
+    vertical-align: bottom; // 有时候帮字体往下靠
+    display: inline-block;
+  }
 
+  .title {
+    font-family: $font-family-header; //font-Cheading;
+    //font-weight: bold;
+    letter-spacing: 3px;
+    margin: 0;
+    text-align: left;
+    padding-bottom: 5px;
+  }
+}
 </style>
