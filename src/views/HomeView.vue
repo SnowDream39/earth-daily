@@ -12,7 +12,7 @@
         <p>Earth Daily 允许用户查看全球新闻，并分享自己的想法。</p>
       </div>
       <div class="btn_success w-30" id="btn-get-started">
-        <a href="/map">Get Started</a>
+        <a href="/map/">Get Started</a>
       </div>
     </div>
     <div class="right-box border-2 rounded-xl ">
@@ -95,10 +95,10 @@
   width: 300px;
   height: 300px;
   border-radius: 50%;
-  background-image: url('/NASA2.jpg');
+  background-image: url('@/assets/globe.jpg');
   background-size: cover;
   animation: spin 10s linear infinite;
-  transform-style: preserve-3d; // 保留3D层
+  transform-style: preserve-3d;
 }
 
 @keyframes spin {
