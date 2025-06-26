@@ -13,6 +13,7 @@
   "dependencies": {
     "@fief/fief": "^0.15.0",
     "axios": "^1.9.0",
+    "element-plus": "^2.10.2",
     "mitt": "^3.0.1",
     "pinia": "^3.0.1",
     "vue": "^3.5.13",
@@ -28,6 +29,8 @@
     "sass-embedded": "^1.89.0",
     "tailwindcss": "^4.1.7",
     "typescript": "~5.8.0",
+    "unplugin-auto-import": "^19.3.0",
+    "unplugin-vue-components": "^28.7.0",
     "vite": "^6.2.4",
     "vite-plugin-vue-devtools": "^7.7.2",
     "vue-tsc": "^2.2.8"

@@ -10,7 +10,7 @@
         <RouterLink to="/more" class="menu text-4 uppercase flex hover:text-amber-600">
           <span class="link">Learn More</span>
         </RouterLink>
-        <div class="btn_primary">Login</div>
+        <div class="btn_primary" ><RouterLink to="/user">Login</RouterLink></div>
       </div>
     </header>
 </template>
